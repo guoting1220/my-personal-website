@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="formContainer">
+        <h1>Meme Generator</h1>
+        <p id="instruction">Fill out the form to start creating memes! </p>
+        <form action="" id="form">
+            <div class="formInput">
+                <label for="url">Image URL</label>
+                <input type="text" id="url" name="url" placeholder="The URL for your meme image" required>
+            </div>
+            <div class="formInput">
+                <label for="topText">Text On Top</label>
+                <input type="text" id="topText" name="topText" placeholder="(Optional) The text you want at the top of the meme">
+            </div>
+            <div class="formInput">
+                <label for="bottomText">Text On Bottom</label>
+                <input type="text" id="bottomText" name="bottomText" placeholder="(Optional) The text you wat at the bottom of the meme">
+            </div>
+            <button id="addMemeBtn">Add Meme</button>
+        </form>
+    </div>
+
+    <div id="memesArea">
+        <!-- <div class="memeBlock">
+            <div class="imgTextDiv">
+                <img class="img"
+                    src="https://images.unsplash.com/photo-1585634917202-6f03b28fc6d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80"
+                    alt="">
+                <p class="text topText">Haha</p>
+                <p class="text bottomText">It is funny</p>
+            </div>
+            <div class="deleteBtnDiv">
+                <button class="deleteBtn">Delete</button>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

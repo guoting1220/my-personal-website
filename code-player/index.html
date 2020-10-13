@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+ <title>CodePlayer</title>
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+ <link rel="stylesheet" media="screen" href="layout.css" />	
+</head>
+<body>
+<div id="wrapper">
+	<div id="menueBar">
+		<div id="logo">CodePlayer</div>	
+		
+		<div id="runButonDiv">
+			<button id="runButton">Run</button>			
+		</div>
+		<div id="toggleDiv">
+		<ul id="toggles">
+			<li class="selected">HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li class="selected">Result</li>
+		</ul>
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+	<div class="codeContaoiner" id="HTMLfield">
+		<h3>HTML</h3>
+		<button class="reset"> Clear</button>
+		<textarea id="htmlCode">
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <p>Welcome to CodePlyer! </p>
+  <p id="text1"></p>
+</body>
+</html>		
+		</textarea>
+	</div>
+	
+	
+	<div class="codeContaoiner" id="CSSfield">
+		<h3>CSS</h3>
+		<button class="reset"> Clear</button>
+		<textarea id="cssCode">
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+html{
+  background-color: #A9E2F3;
+}
+		</textarea>
+	</div>
+	
+	
+	<div class="codeContaoiner" id="JavaScriptfield">
+		<h3>JavaScript</h3>
+		<button class="reset"> Clear</button>
+		<textarea id="jsCode">document.getElementById("text1").innerHTML = "JavaScript works!";</textarea>
+	</div>
+	
+	<div class="codeContaoiner" id="Resultfield">
+		<h3>Result</h3>
+		<iframe></iframe>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
